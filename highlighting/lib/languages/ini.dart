@@ -92,7 +92,7 @@ final ini = Language(
   },
   name: "TOML, also INI",
   aliases: ["toml"],
-  case_insensitive: true,
+  caseInsensitive: true,
   illegal: "\\S",
   contains: [
     ModeReference('~contains~0'),

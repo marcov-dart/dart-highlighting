@@ -165,7 +165,7 @@ final yaml = Language(
     ),
   },
   name: "YAML",
-  case_insensitive: true,
+  caseInsensitive: true,
   aliases: ["yml"],
   contains: [
     ModeReference('~contains~0'),

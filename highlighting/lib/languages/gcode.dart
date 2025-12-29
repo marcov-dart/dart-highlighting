@@ -19,7 +19,7 @@ final gcode = Language(
   },
   name: "G-code (ISO 6983)",
   aliases: ["nc"],
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "\$pattern": "[A-Z_][A-Z0-9_.]*",
     "keyword":

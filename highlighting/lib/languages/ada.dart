@@ -52,7 +52,7 @@ final ada = Language(
     ),
   },
   name: "Ada",
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "keyword": [
       "abort",

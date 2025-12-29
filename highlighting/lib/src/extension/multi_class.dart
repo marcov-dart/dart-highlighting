@@ -2,7 +2,7 @@ import '../const/literals.dart';
 import '../mode.dart';
 import 'reg_exp.dart';
 
-final MultiClassError = Exception('MultiClass Error');
+final multiClassError = Exception('MultiClass Error');
 
 /// [regexes] -- A list of [RegExp] or strings to be compiled to [RegExp].
 /// [key] - `"beginScope" | "endScope"`

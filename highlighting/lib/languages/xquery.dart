@@ -12,7 +12,7 @@ final xquery = Language(
   refs: {},
   name: "XQuery",
   aliases: ["xpath", "xq"],
-  case_insensitive: false,
+  caseInsensitive: false,
   illegal: "(proc)|(abstract)|(extends)|(until)|(#)",
   keywords: {
     "\$pattern": "[a-zA-Z\$][a-zA-Z0-9_:-]*",

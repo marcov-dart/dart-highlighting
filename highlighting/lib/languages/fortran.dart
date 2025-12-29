@@ -11,7 +11,7 @@ final fortran = Language(
   id: "fortran",
   refs: {},
   name: "Fortran",
-  case_insensitive: true,
+  caseInsensitive: true,
   aliases: ["f90", "f95"],
   keywords: {
     "keyword": [

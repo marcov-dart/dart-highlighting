@@ -107,7 +107,7 @@ final xml = Language(
     "wsf",
     "svg"
   ],
-  case_insensitive: true,
+  caseInsensitive: true,
   unicodeRegex: true,
   contains: [
     Mode(

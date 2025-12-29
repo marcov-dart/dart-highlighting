@@ -25,7 +25,7 @@ final nsis = Language(
     ),
   },
   name: "NSIS",
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "keyword": [
       "Abort",

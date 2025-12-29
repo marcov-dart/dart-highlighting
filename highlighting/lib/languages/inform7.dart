@@ -12,7 +12,7 @@ final inform7 = Language(
   refs: {},
   name: "Inform 7",
   aliases: ["i7"],
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "keyword":
         "thing room person man woman animal container supporter backdrop door scenery open closed locked inside gender is are say understand kind of rule"

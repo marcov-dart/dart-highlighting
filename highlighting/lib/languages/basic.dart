@@ -11,7 +11,7 @@ final basic = Language(
   id: "basic",
   refs: {},
   name: "BASIC",
-  case_insensitive: true,
+  caseInsensitive: true,
   illegal: "^.",
   keywords: {
     "\$pattern": "[a-zA-Z][a-zA-Z0-9_\$%!#]*",

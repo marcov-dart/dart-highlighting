@@ -36,5 +36,5 @@ final fix = Language(
       ],
     ),
   ],
-  case_insensitive: true,
+  caseInsensitive: true,
 );

@@ -11,7 +11,7 @@ final hsp = Language(
   id: "hsp",
   refs: {},
   name: "HSP",
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "\$pattern": "[\\w._]+",
     "keyword":

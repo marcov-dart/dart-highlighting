@@ -2,7 +2,6 @@ import 'package:collection/collection.dart';
 
 import 'extension/reg_exp.dart';
 import 'js_style_reg_exp_match.dart';
-import 'utils.dart';
 
 /// A regular expression that is optionally stateful if [global] is true.
 class JsStyleRegExp {

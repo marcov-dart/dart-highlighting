@@ -359,7 +359,7 @@ final php = Language(
           "[a-zA-Z_\\x7f-\\xff][a-zA-Z0-9_\\x7f-\\xff]*(?![A-Za-z0-9])(?![\$])(?=:)(?=(?!::))",
     ),
   },
-  case_insensitive: false,
+  caseInsensitive: false,
   keywords: {
     "keyword": [
       "__CLASS__",

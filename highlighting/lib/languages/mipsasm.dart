@@ -11,7 +11,7 @@ final mipsasm = Language(
   id: "mipsasm",
   refs: {},
   name: "MIPS Assembly",
-  case_insensitive: true,
+  caseInsensitive: true,
   aliases: ["mips"],
   keywords: {
     "\$pattern": "\\.?[a-zA-Z]\\w*",

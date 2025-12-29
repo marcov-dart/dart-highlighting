@@ -11,6 +11,8 @@ void main() => runApp(MyApp());
 const _title = 'Flutter Highlighting by Akvelon';
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,8 +24,10 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
+
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -58,8 +62,8 @@ class _MyHomePageState extends State<MyHomePage> {
               return builtinLanguages.keys.map((key) {
                 return CheckedPopupMenuItem(
                   value: key,
-                  child: Text(key),
                   checked: languageId == key,
+                  child: Text(key),
                 );
               }).toList();
             },
@@ -76,8 +80,8 @@ class _MyHomePageState extends State<MyHomePage> {
               return themeMap.keys.map((key) {
                 return CheckedPopupMenuItem(
                   value: key,
-                  child: Text(key),
                   checked: theme == key,
+                  child: Text(key),
                 );
               }).toList();
             },

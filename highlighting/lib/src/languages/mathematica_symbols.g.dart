@@ -5,7 +5,7 @@
 // ignore_for_file: unnecessary_raw_strings
 // ignore_for_file: use_raw_strings
 
-final SYSTEM_SYMBOLS = {
+final systemSymbols = {
   r"AASTriangle",
   r"AbelianGroup",
   r"Abort",

@@ -11,7 +11,7 @@ final armasm = Language(
   id: "armasm",
   refs: {},
   name: "ARM Assembly",
-  case_insensitive: true,
+  caseInsensitive: true,
   aliases: ["arm"],
   keywords: {
     "\$pattern": "\\.?[a-zA-Z]\\w*",

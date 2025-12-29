@@ -12,7 +12,7 @@ final excel = Language(
   refs: {},
   name: "Excel formulae",
   aliases: ["xlsx", "xls"],
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "\$pattern": "[a-zA-Z][\\w\\.]*",
     "built_in": [

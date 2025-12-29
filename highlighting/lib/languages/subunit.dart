@@ -11,7 +11,7 @@ final subunit = Language(
   id: "subunit",
   refs: {},
   name: "SubUnit",
-  case_insensitive: true,
+  caseInsensitive: true,
   contains: [
     Mode(
       className: "string",

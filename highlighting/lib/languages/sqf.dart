@@ -32,7 +32,7 @@ final sqf = Language(
     ),
   },
   name: "SQF",
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "keyword": [
       "break",

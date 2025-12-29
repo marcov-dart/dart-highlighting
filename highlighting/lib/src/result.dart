@@ -87,9 +87,9 @@ class Result {
       builder.addText(node.value!);
     } else {
       builder.openNode(node);
-      node.children.forEach((element) {
+      for (var element in node.children) {
         _walk(builder, element);
-      });
+      }
       builder.closeNode(node);
     }
 

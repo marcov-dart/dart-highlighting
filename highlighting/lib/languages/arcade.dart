@@ -267,7 +267,7 @@ final arcade = Language(
     ),
   },
   name: "ArcGIS Arcade",
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "keyword": [
       "if",

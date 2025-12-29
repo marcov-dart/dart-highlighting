@@ -1,5 +1,4 @@
-import 'package:collection/collection.dart';
-import 'package:highlighting/src/node.dart';
+import 'node.dart';
 
 import 'result.dart';
 
@@ -28,7 +27,7 @@ class HtmlRenderer {
     }
 
     String className;
-    if (node.sublanguage == true) {
+    if (node.sublanguage ?? false) {
       className = 'language-${node.language!}';
     } else {
       className = scopeToCSSClass(node.className!, classPrefix);

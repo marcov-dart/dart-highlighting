@@ -12,7 +12,7 @@ final graphql = Language(
   refs: {},
   name: "GraphQL",
   aliases: ["gql"],
-  case_insensitive: true,
+  caseInsensitive: true,
   disableAutodetect: false,
   keywords: {
     "keyword": [

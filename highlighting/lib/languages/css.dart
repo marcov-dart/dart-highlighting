@@ -18,7 +18,7 @@ final css = Language(
     ),
   },
   name: "CSS",
-  case_insensitive: true,
+  caseInsensitive: true,
   illegal: "[=|'\\\$]",
   keywords: {"keyframePosition": "from to"},
   classNameAliases: {"keyframePosition": "selector-tag"},

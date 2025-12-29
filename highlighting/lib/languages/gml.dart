@@ -11,7 +11,7 @@ final gml = Language(
   id: "gml",
   refs: {},
   name: "GML",
-  case_insensitive: false,
+  caseInsensitive: false,
   keywords: {
     "keyword": [
       "#endregion",

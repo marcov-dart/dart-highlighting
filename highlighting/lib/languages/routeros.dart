@@ -46,7 +46,7 @@ final routeros = Language(
   },
   name: "MikroTik RouterOS script",
   aliases: ["mikrotik"],
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "\$pattern": ":?[\\w-]+",
     "literal": "true false yes no nothing nil null",

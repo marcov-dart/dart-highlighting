@@ -12,7 +12,7 @@ final verilog = Language(
   refs: {},
   name: "Verilog",
   aliases: ["v", "sv", "svh"],
-  case_insensitive: false,
+  caseInsensitive: false,
   keywords: {
     "\$pattern": "\\\$?[\\w]+(\\\$[\\w]+)*",
     "keyword": [

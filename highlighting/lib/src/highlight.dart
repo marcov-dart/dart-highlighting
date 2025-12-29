@@ -42,7 +42,7 @@ class Highlight {
     final md = compileLanguage(language!);
 
     Mode top = continuation ?? md;
-    final continuations = Map<String, dynamic>();
+    final continuations = <String, dynamic>{};
 
     void processContinuations() {
       final list = [];
@@ -53,9 +53,9 @@ class Highlight {
           list.insert(0, current.scope);
         }
       }
-      list.forEach((element) {
+      for (var element in list) {
         emitter.openNode(element);
-      });
+      }
     }
 
     processContinuations();
@@ -71,7 +71,7 @@ class Highlight {
     /// `$rule`: Mode
     JsStyleRegExpMatch? lastMatch;
 
-    var keywordHits = Map<String, dynamic>();
+    var keywordHits = <String, dynamic>{};
 
     Tuple2<String, double>? keywordData(Mode mode, String matchText) {
       return mode.keywords[matchText];
@@ -90,7 +90,7 @@ class Highlight {
 
       while (match != null) {
         buf += substring(modeBuffer, lastIndex, match.index);
-        final word = language.case_insensitive == true
+        final word = language.caseInsensitive == true
             ? match[0]!.toLowerCase()
             : match[0];
 

@@ -29,6 +29,7 @@ class HighlightView extends StatelessWidget {
 
   HighlightView(
     String input, {
+    super.key,
     this.languageId,
     this.theme = const {},
     this.padding,
@@ -37,32 +38,32 @@ class HighlightView extends StatelessWidget {
   }) : source = input.replaceAll('\t', ' ' * tabSize);
 
   List<TextSpan> _convert(List<Node> nodes) {
-    List<TextSpan> spans = [];
+    final List<TextSpan> spans = [];
     var currentSpans = spans;
-    List<List<TextSpan>> stack = [];
+    final List<List<TextSpan>> stack = [];
 
-    _traverse(Node node) {
+    void traverse(Node node) {
       if (node.value != null) {
         currentSpans.add(node.className == null
             ? TextSpan(text: node.value)
             : TextSpan(text: node.value, style: theme[node.className]));
       } else {
-        List<TextSpan> tmp = [];
+        final List<TextSpan> tmp = [];
         currentSpans.add(TextSpan(children: tmp, style: theme[node.className]));
         stack.add(currentSpans);
         currentSpans = tmp;
 
-        node.children.forEach((n) {
-          _traverse(n);
+        for (var n in node.children) {
+          traverse(n);
           if (n == node.children.last) {
             currentSpans = stack.isEmpty ? spans : stack.removeLast();
           }
-        });
+        }
       }
     }
 
     for (var node in nodes) {
-      _traverse(node);
+      traverse(node);
     }
 
     return spans;
@@ -79,12 +80,12 @@ class HighlightView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var _textStyle = TextStyle(
+    var textStyle = TextStyle(
       fontFamily: _defaultFontFamily,
       color: theme[_rootKey]?.color ?? _defaultFontColor,
     );
-    if (textStyle != null) {
-      _textStyle = _textStyle.merge(textStyle);
+    if (this.textStyle != null) {
+      textStyle = textStyle.merge(this.textStyle);
     }
 
     return Container(
@@ -92,8 +93,10 @@ class HighlightView extends StatelessWidget {
       padding: padding,
       child: RichText(
         text: TextSpan(
-          style: _textStyle,
+          style: textStyle,
           children: _convert(
+            // TODO fix
+            // ignore: invalid_use_of_internal_member
             highlight.highlight(languageId ?? '', source, true).nodes ?? [],
           ),
         ),

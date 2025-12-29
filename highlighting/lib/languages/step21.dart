@@ -12,7 +12,7 @@ final step21 = Language(
   refs: {},
   name: "STEP Part 21",
   aliases: ["p21", "step", "stp"],
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "\$pattern": "[A-Z_][A-Z0-9_.]*",
     "keyword": ["HEADER", "ENDSEC", "DATA"]

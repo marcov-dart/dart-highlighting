@@ -15,7 +15,7 @@ final autohotkey = Language(
     ),
   },
   name: "AutoHotkey",
-  case_insensitive: true,
+  caseInsensitive: true,
   aliases: ["ahk"],
   keywords: {
     "keyword":

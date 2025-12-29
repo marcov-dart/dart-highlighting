@@ -11,7 +11,7 @@ final monkey = Language(
   id: "monkey",
   refs: {},
   name: "Monkey",
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "keyword": [
       "public",

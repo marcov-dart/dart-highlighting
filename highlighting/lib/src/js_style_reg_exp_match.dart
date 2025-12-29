@@ -7,7 +7,7 @@ class JsStyleRegExpMatch {
   final int startIndex;
   int position = 0;
   Mode? rule;
-  List<String?> _matchGroups = [];
+  final List<String?> _matchGroups = [];
 
   /// 'begin' | 'end' | 'illegal' -> see constants
   String? matchType;

@@ -64,7 +64,7 @@ final oxygene = Language(
     ),
   },
   name: "Oxygene",
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "\$pattern": "\\.?\\w+",
     "keyword":

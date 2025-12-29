@@ -11,7 +11,7 @@ final avrasm = Language(
   id: "avrasm",
   refs: {},
   name: "AVR Assembly",
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "\$pattern": "\\.?[a-zA-Z]\\w*",
     "keyword":

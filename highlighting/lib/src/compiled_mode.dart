@@ -53,8 +53,8 @@ class CompiledMode {
 
     compiled.keywords = mode.keywords;
     compiled.data = mode.data;
-    if (mode.terminator_end != null) {
-      compiled.terminatorEnd = mode.terminator_end;
+    if (mode.terminatorEnd != null) {
+      compiled.terminatorEnd = mode.terminatorEnd;
     }
     if (mode.keywordPatternRe != null) {
       compiled.keywordPatternRe = mode.keywordPatternRe;

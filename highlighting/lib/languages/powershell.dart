@@ -169,7 +169,7 @@ final powershell = Language(
   },
   name: "PowerShell",
   aliases: ["pwsh", "ps", "ps1"],
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "\$pattern": "-?[A-z\\.\\-]+\\b",
     "keyword":

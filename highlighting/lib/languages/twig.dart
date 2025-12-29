@@ -171,7 +171,7 @@ final twig = Language(
   },
   name: "Twig",
   aliases: ["craftcms"],
-  case_insensitive: true,
+  caseInsensitive: true,
   subLanguage: ["xml"],
   contains: [
     Mode(

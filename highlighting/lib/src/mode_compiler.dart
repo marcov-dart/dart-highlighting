@@ -34,8 +34,8 @@ ResumableMultiRegex buildModeRegex(
     mm.addRule(term.beginRe!, RuleOptions(rule: term, type: $begin));
   });
 
-  if (mode.terminator_end != null) {
-    mm.addRule(RegExp(mode.terminator_end!), RuleOptions(type: $end));
+  if (mode.terminatorEnd != null) {
+    mm.addRule(RegExp(mode.terminatorEnd!), RuleOptions(type: $end));
   }
 
   if (mode.illegal != null) {
@@ -69,7 +69,9 @@ Mode compileMode(
   multiClass(mode, parent);
   beforeMatchExt(mode, parent);
 
-  language.compilerExtensions.forEach((ext) => ext?.call(mode, parent));
+  for (var ext in language.compilerExtensions) {
+    ext?.call(mode, parent);
+  }
 
   mode.beforeBegin = null;
 
@@ -92,7 +94,7 @@ Mode compileMode(
   if (mode.keywords != null) {
     mode.keywords = compileKeywords(
       mode.keywords,
-      language.case_insensitive == true,
+      language.caseInsensitive == true,
     );
   }
 
@@ -111,12 +113,12 @@ Mode compileMode(
       mode.endRe = langRe(mode.end, false, language);
     }
 
-    mode.terminator_end = source(mode.end);
+    mode.terminatorEnd = source(mode.end);
 
-    if (mode.endsWithParent == true && parent.terminator_end != null) {
-      mode.terminator_end = (mode.terminator_end ?? '') +
+    if (mode.endsWithParent == true && parent.terminatorEnd != null) {
+      mode.terminatorEnd = (mode.terminatorEnd ?? '') +
           (mode.end != null ? '|' : '') +
-          parent.terminator_end!;
+          parent.terminatorEnd!;
     }
   }
 
@@ -126,7 +128,7 @@ Mode compileMode(
   mode.contains ??= [];
 
   var newList = <Mode>[];
-  mode.contains!.forEach((element) {
+  for (var element in mode.contains!) {
     if (element is ModeReference) {
       element = replaceRef(element, refs: refs);
     }
@@ -136,7 +138,7 @@ Mode compileMode(
         refs: refs,
       ),
     );
-  });
+  }
   mode.contains = newList;
   for (final element in mode.contains!) {
     compileMode(element, parent: mode, language: language, refs: refs);

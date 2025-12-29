@@ -357,7 +357,7 @@ final less = Language(
     ),
   },
   name: "Less",
-  case_insensitive: true,
+  caseInsensitive: true,
   illegal: "[=>'/<(\$\"]",
   contains: [
     C_LINE_COMMENT_MODE,

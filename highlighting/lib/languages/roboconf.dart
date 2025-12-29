@@ -33,7 +33,7 @@ final roboconf = Language(
   },
   name: "Roboconf",
   aliases: ["graph", "instances"],
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: "import",
   contains: [
     Mode(

@@ -3,7 +3,7 @@ import 'package:collection/collection.dart';
 import '../const/regexes.dart';
 import '../utils.dart';
 
-String lookahead(re) {
+String lookahead(dynamic re) {
   return concat(['(?=', re, ')']);
 }
 
@@ -30,15 +30,15 @@ String concat(List<dynamic> args) {
   return args.map((e) => source(e)).join('');
 }
 
-/// List<String | RegExp>
+// List<String | RegExp>
 String either(List<dynamic> args) {
-  final joined = '(' '?:' + args.map((x) => source(x)).join("|") + ")";
+  final joined = '(?:${args.map((x) => source(x)).join("|")})';
   return joined;
 }
 
 extension RegExpExtension on RegExp {
   int countMatchGroups() {
-    return RegExp(pattern + '|').firstMatch('')?.groupCount ?? 0;
+    return RegExp('$pattern|').firstMatch('')?.groupCount ?? 0;
   }
 }
 
@@ -67,7 +67,7 @@ String rewriteBackReferences(
           re = substring(re, matches.end);
 
           if (matches.group(0)?[0] == '\\' && matches.group(1) != null) {
-            out += '\\' + (int.parse(matches.group(1)!) + offset).toString();
+            out += '\\${int.parse(matches.group(1)!) + offset}';
           } else {
             out += matches.group(0)!;
             if (matches.group(0) == '(') {

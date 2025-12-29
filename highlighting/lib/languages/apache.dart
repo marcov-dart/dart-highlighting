@@ -17,7 +17,7 @@ final apache = Language(
   },
   name: "Apache config",
   aliases: ["apacheconf"],
-  case_insensitive: true,
+  caseInsensitive: true,
   contains: [
     HASH_COMMENT_MODE,
     Mode(

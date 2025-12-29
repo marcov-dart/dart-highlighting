@@ -58,8 +58,7 @@ class Mode {
   RegExp? beginRe;
   RegExp? endRe;
   RegExp? illegalRe;
-  String? terminator_end;
-  List<Mode>? cached_variants;
+  String? terminatorEnd;
   RegExp? terminators;
 
   /// `String | List<String>`
@@ -79,7 +78,7 @@ class Mode {
   /// `String | RegExp`
   dynamic beforeMatch;
 
-  /// `String | Map<String, String>` (Map<string, dynamic>?)
+  // `String | Map<String, String>` (Map<string, dynamic>?)
   dynamic beginScope;
   String? label;
 
@@ -142,7 +141,7 @@ class Mode {
       ..beginRe = b.beginRe ?? a.beginRe
       ..beginScope = b.beginScope ?? a.beginScope
       ..binary = b.binary ?? a.binary
-      ..cached_variants = b.cached_variants ?? a.cached_variants
+      ..cachedVariants = b.cachedVariants ?? a.cachedVariants
       ..className = b.className ?? a.className
       ..compiled = b.compiled ?? a.compiled
       ..contains = b.contains ?? a.contains
@@ -174,7 +173,7 @@ class Mode {
       ..skip = b.skip ?? a.skip
       ..starts = b.starts ?? a.starts
       ..subLanguage = b.subLanguage.isNotEmpty ? b.subLanguage : a.subLanguage
-      ..terminator_end = b.terminator_end ?? a.terminator_end
+      ..terminatorEnd = b.terminatorEnd ?? a.terminatorEnd
       ..terminators = b.terminators ?? a.terminators
       ..variants = b.variants ?? a.variants;
 

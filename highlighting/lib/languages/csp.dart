@@ -11,7 +11,7 @@ final csp = Language(
   id: "csp",
   refs: {},
   name: "CSP",
-  case_insensitive: false,
+  caseInsensitive: false,
   keywords: {
     "\$pattern": "[a-zA-Z][a-zA-Z0-9_-]*",
     "keyword": [

@@ -129,7 +129,7 @@ final lasso = Language(
   },
   name: "Lasso",
   aliases: ["ls", "lassoscript"],
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "\$pattern": "[a-zA-Z_][\\w.]*|&[lg]t;",
     "literal":

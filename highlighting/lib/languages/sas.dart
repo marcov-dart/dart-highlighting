@@ -11,7 +11,7 @@ final sas = Language(
   id: "sas",
   refs: {},
   name: "SAS",
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "literal": [
       "null",

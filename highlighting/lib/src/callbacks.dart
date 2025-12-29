@@ -22,7 +22,7 @@ void language_mathematica_contains_0_variants_0_onBegin(
   JsStyleRegExpMatch m,
   Response resp,
 ) {
-  if (!SYSTEM_SYMBOLS.contains(m[0])) {
+  if (!systemSymbols.contains(m[0])) {
     resp.ignoreMatch();
   }
 }
@@ -87,7 +87,7 @@ bool hasClosingTag(
   JsStyleRegExpMatch match, {
   required int after,
 }) {
-  final tag = "</" + match[0]!.substring(1);
+  final tag = "</${match[0]!.substring(1)}";
   final pos = match.input.indexOf(tag, after);
   return pos != -1;
 }

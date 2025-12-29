@@ -78,7 +78,7 @@ final delphi = Language(
   },
   name: "Delphi",
   aliases: ["dpr", "dfm", "pas", "pascal"],
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: [
     "exports",
     "register",

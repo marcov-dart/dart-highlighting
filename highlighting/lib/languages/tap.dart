@@ -11,7 +11,7 @@ final tap = Language(
   id: "tap",
   refs: {},
   name: "Test Anything Protocol",
-  case_insensitive: true,
+  caseInsensitive: true,
   contains: [
     HASH_COMMENT_MODE,
     Mode(

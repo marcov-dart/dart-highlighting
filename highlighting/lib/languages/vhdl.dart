@@ -11,7 +11,7 @@ final vhdl = Language(
   id: "vhdl",
   refs: {},
   name: "VHDL",
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "keyword": [
       "abs",

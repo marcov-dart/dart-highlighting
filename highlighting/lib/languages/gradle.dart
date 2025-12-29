@@ -11,7 +11,7 @@ final gradle = Language(
   id: "gradle",
   refs: {},
   name: "Gradle",
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: [
     "task",
     "project",

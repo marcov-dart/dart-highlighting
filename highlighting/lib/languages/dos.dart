@@ -32,7 +32,7 @@ final dos = Language(
   },
   name: "Batch file (DOS)",
   aliases: ["bat", "cmd"],
-  case_insensitive: true,
+  caseInsensitive: true,
   illegal: "\\/\\*",
   keywords: {
     "keyword": [

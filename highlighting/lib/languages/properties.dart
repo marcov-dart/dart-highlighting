@@ -12,7 +12,7 @@ final properties = Language(
   refs: {},
   name: ".properties",
   disableAutodetect: true,
-  case_insensitive: true,
+  caseInsensitive: true,
   illegal: "\\S",
   contains: [
     Mode(

@@ -12,7 +12,7 @@ final dockerfile = Language(
   refs: {},
   name: "Dockerfile",
   aliases: ["docker"],
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: [
     "from",
     "maintainer",

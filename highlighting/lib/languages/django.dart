@@ -24,7 +24,7 @@ final django = Language(
   },
   name: "Django",
   aliases: ["jinja"],
-  case_insensitive: true,
+  caseInsensitive: true,
   subLanguage: ["xml"],
   contains: [
     Mode(

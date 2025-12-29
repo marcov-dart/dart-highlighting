@@ -11,7 +11,7 @@ final sql = Language(
   id: "sql",
   refs: {},
   name: "SQL",
-  case_insensitive: true,
+  caseInsensitive: true,
   illegal: "[{}]|<\\/",
   keywords: {
     "\$pattern": "\\b[\\w\\.]+",

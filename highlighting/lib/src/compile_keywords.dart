@@ -38,7 +38,7 @@ KeywordDict compileKeywords(
       keywordList = keywordList.map((x) => x.toLowerCase()).toList();
     }
 
-    keywordList.forEach((keyword) {
+    for (var keyword in keywordList) {
       final pair = keyword.split('|');
       compiledKeywords[pair[0]] = Tuple2(
         scopeName,
@@ -47,7 +47,7 @@ KeywordDict compileKeywords(
           pair.length > 1 ? pair[1] : null,
         ),
       );
-    });
+    }
   }
 
   if (rawKeywords is String) {
@@ -62,7 +62,7 @@ KeywordDict compileKeywords(
         keywordList: rawKeywords,
         caseInsensitive: caseInsensitive);
   } else if (rawKeywords is Map) {
-    rawKeywords.keys.forEach((scopeName) {
+    for (var scopeName in rawKeywords.keys) {
       final result = compileKeywords(
         rawKeywords[scopeName],
         caseInsensitive,
@@ -74,7 +74,7 @@ KeywordDict compileKeywords(
           compiledKeywords[key] = result[key]!;
         }
       }
-    });
+    }
   }
 
   return compiledKeywords;

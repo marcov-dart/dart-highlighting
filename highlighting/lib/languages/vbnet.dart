@@ -39,7 +39,7 @@ final vbnet = Language(
   },
   name: "Visual Basic .NET",
   aliases: ["vb"],
-  case_insensitive: true,
+  caseInsensitive: true,
   classNameAliases: {"label": "symbol"},
   keywords: {
     "keyword":

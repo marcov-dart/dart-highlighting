@@ -105,7 +105,7 @@ final autoit = Language(
     ),
   },
   name: "AutoIt",
-  case_insensitive: true,
+  caseInsensitive: true,
   illegal: "\\/\\*",
   keywords: {
     "keyword":

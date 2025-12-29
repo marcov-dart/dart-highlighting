@@ -99,7 +99,7 @@ final isbl = Language(
     ),
   },
   name: "ISBL",
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "\$pattern": "[A-Za-zА-Яа-яёЁ_!][A-Za-zА-Яа-яёЁ_0-9]*",
     "keyword":

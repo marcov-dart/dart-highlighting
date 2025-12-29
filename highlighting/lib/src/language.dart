@@ -6,7 +6,7 @@ class Language extends Mode {
 
   final List<String> aliases;
 
-  final bool case_insensitive;
+  final bool caseInsensitive;
 
   /// `String | Map<String, String>`
   dynamic classNameAliases;
@@ -28,7 +28,7 @@ class Language extends Mode {
     required this.id,
     required this.refs,
     this.aliases = const [],
-    this.case_insensitive = false,
+    this.caseInsensitive = false,
     this.classNameAliases,
     this.compilerExtensions = const [],
     this.disableAutodetect = false,

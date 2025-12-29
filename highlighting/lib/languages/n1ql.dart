@@ -11,7 +11,7 @@ final n1Ql = Language(
   id: "n1ql",
   refs: {},
   name: "N1QL",
-  case_insensitive: true,
+  caseInsensitive: true,
   contains: [
     Mode(
       beginKeywords:

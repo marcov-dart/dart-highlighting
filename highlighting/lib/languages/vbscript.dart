@@ -12,7 +12,7 @@ final vbscript = Language(
   refs: {},
   name: "VBScript",
   aliases: ["vbs"],
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "keyword": [
       "call",

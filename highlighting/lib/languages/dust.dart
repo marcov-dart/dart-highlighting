@@ -12,7 +12,7 @@ final dust = Language(
   refs: {},
   name: "Dust",
   aliases: ["dst"],
-  case_insensitive: true,
+  caseInsensitive: true,
   subLanguage: ["xml"],
   contains: [
     Mode(

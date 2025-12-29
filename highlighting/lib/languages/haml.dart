@@ -11,7 +11,7 @@ final haml = Language(
   id: "haml",
   refs: {},
   name: "HAML",
-  case_insensitive: true,
+  caseInsensitive: true,
   contains: [
     Mode(
       className: "meta",

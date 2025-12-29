@@ -26,7 +26,7 @@ final cal = Language(
     ),
   },
   name: "C/AL",
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "keyword": [
       "div",

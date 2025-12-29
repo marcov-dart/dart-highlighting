@@ -32,7 +32,7 @@ void beginKeywords(Mode mode, Mode? parent) {
   // doesn't allow spaces in keywords anyways and we still check for the boundary
   // first
   mode.begin =
-      '\\b(' + mode.beginKeywords!.split(' ').join('|') + ')(?!\\.)(?=\\b|\\s)';
+      '\\b(${mode.beginKeywords!.split(' ').join('|')})(?!\\.)(?=\\b|\\s)';
   mode.beforeBegin = skipIfHasPrecedingDot;
   mode.keywords = mode.keywords ?? mode.beginKeywords;
   mode.beginKeywords = null;

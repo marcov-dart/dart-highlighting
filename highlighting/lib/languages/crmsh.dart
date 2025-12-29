@@ -12,7 +12,7 @@ final crmsh = Language(
   refs: {},
   name: "crmsh",
   aliases: ["crm", "pcmk"],
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "keyword":
         "params meta operations op rule attributes utilization read write deny defined not_defined in_range date spec in ref reference attribute type xpath version and or lt gt tag lte gte eq ne \\ number string",

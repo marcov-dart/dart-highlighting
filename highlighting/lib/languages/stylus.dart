@@ -31,7 +31,7 @@ final stylus = Language(
   },
   name: "Stylus",
   aliases: ["styl"],
-  case_insensitive: false,
+  caseInsensitive: false,
   keywords: "if else for in",
   illegal:
       "(\\?|(\\bReturn\\b)|(\\bEnd\\b)|(\\bend\\b)|(\\bdef\\b)|;|#\\s|\\*\\s|===\\s|\\||%)",

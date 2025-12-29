@@ -11,7 +11,7 @@ final irpf90 = Language(
   id: "irpf90",
   refs: {},
   name: "IRPF90",
-  case_insensitive: true,
+  caseInsensitive: true,
   keywords: {
     "literal": ".False. .True.",
     "keyword":

@@ -31,7 +31,7 @@ final scss = Language(
     ),
   },
   name: "SCSS",
-  case_insensitive: true,
+  caseInsensitive: true,
   illegal: "[=/|']",
   contains: [
     C_LINE_COMMENT_MODE,

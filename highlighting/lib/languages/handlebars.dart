@@ -259,7 +259,7 @@ final handlebars = Language(
   },
   name: "Handlebars",
   aliases: ["hbs", "html.hbs", "html.handlebars", "htmlbars"],
-  case_insensitive: true,
+  caseInsensitive: true,
   subLanguage: ["xml"],
   contains: [
     Mode(
